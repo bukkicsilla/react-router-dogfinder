@@ -7,7 +7,6 @@ function NavBar({ dogs }) {
       {dog.name}
     </NavLink>
   ));
-  console.log(links);
   return (
     <nav>
       <NavLink to="/dogs">Home</NavLink>

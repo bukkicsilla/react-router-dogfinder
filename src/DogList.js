@@ -13,5 +13,4 @@ const DogList = ({ dogs }) => {
     </div>
   );
 };
-
 export default DogList;

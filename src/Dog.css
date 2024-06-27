@@ -1,0 +1,16 @@
+.Dog img {
+  max-width: 40%;
+  border-radius: 10%;
+  margin-top: 4rem;
+  border: 5px solid gold;
+}
+.Dog-back {
+  text-decoration: none;
+  font-weight: bold;
+  color: purple;
+}
+.Dog h2,
+.Dog h3,
+.Dog li {
+  color: purple;
+}
