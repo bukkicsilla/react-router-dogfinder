@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 import DogList from "./DogList";
 import Dog from "./Dog";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
 import "./App.css";
 
 function App({ dogs }) {
@@ -17,7 +17,8 @@ function App({ dogs }) {
           />
           <Route path="/dogs" element={<DogList dogs={dogs} />} />
           <Route path="/dogs/:name" element={<Dog dogs={dogs} />} />
-          <Route path="*" element={<h1>Not Found</h1>} />
+          {/*<Route path="/*" element={<h1>Not Found</h1>} />*/}
+          <Route path="/*" element={<Navigate to="/dogs" />} />
         </Routes>
       </BrowserRouter>
     </div>
